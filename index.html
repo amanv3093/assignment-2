@@ -1,0 +1,134 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Assignment 2</title>   
+    
+    <style >  
+    @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Cinzel:wght@500&family=Hind+Siliguri:wght@600&family=Merriweather:wght@700&family=Poppins:wght@200&family=Roboto&family=Roboto+Mono:wght@300&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Abyssinica SIL', serif;
+    }
+        body{  
+            font-family: Calibri;  
+        }  
+        input[type="text"] {  
+            width: 250px;  
+        }  
+        input[type="submit"], input[type="reset"] {  
+            width: 77px;  
+            height: 27px;  
+            position: relative;left: 180px;  
+        }  
+        form{  
+            text-align: center;  
+            font-family: Calibri;  
+            font-size: 20px;  
+            border: 3px solid black;  
+            width: 600px;  
+            margin: 20px auto;  
+        }  
+        td {  
+            padding: 10px;  
+        }  
+        td:first-child {  
+            text-align: right;  
+            font-weight: bold;  
+        }  
+        td:last-child {  
+            text-align: left;  
+        }
+        .d1{
+            display: flex;
+        }
+        h2{
+
+        }
+    </style> 
+</head>    
+<body id="main" onload="setInterval(bg,1000)"> 
+      <div class="resi">
+    <form method="" action="" name="reg_form" onsubmit="return validate()">    
+        <h2>Registration Form</h2>    
+        <table>    
+            <tr>    
+                <td><label>First Name: </label></td>   
+                <td>    
+                    <input type="text" name="fname" placeholder="First Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Last Name: </label></td>    
+                <td>    
+                    <input type="text" name="lname" placeholder="Last Name">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Address: </label></td>    
+                <td>    
+                    <input type="textarea" size="40" name="address" placeholder="Address">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Gender: </label></td>    
+                <td>    
+                    <input type="radio" name="gender" value="male">Male    
+                    <input type="radio" name="gender" value="femele">Female    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Email Id: </label></td>    
+                <td>    
+                    <input type="text" name="email" placeholder="example@gmail.com">    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Mobile: </label></td>    
+                <td>    
+                    <input type="number" name="mobile">    
+                </td>    
+            </tr>    
+            <tr>    
+            <td><label>Course: </label></td>    
+                <td>    
+                    <select name="course">    
+                        <option value="select course">select course</option>    
+                        <option value="BCA">BCA</option>    
+                        <option value="MCA">MCA</option>    
+                        <option value="B-TECH">B-TECH</option>    
+                        <option value="MBA">MBA</option>    
+                    </select>    
+                </td>    
+            </tr>    
+            <tr>     
+                <td class="d1">    
+                    <input type="submit" name="submit" value="Submit">    
+                    <input type="reset" name="reset" value="Reset">    
+                </td>    
+            </tr>             
+        </table>    
+    </form>    
+</div>
+<script type="text/javascript">  
+ 
+
+
+       
+    var colors=["red","red","red","red","yellow","yellow","yellow","yellow","orange","orange","orange","orange"];
+    var i=0;
+    function bg(){
+        document.getElementById("main").style.backgroundColor=colors[i];
+        
+        i=i+1;
+        if(i>colors.length){
+            i=0;
+        }
+    }
+
+   
+</script> 
+</body>    
+</html>
+
+
